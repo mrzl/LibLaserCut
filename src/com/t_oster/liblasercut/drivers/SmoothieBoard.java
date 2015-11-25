@@ -38,7 +38,7 @@ public class SmoothieBoard extends GenericGcodeDriver {
     setBaudRate(115200);
     setLineend("CRLF");
     setInitDelay(0);
-    setPreJobGcode(getPreJobGcode()+",M3");
+    setPreJobGcode(getPreJobGcode()+",M3,G28");
     setPostJobGcode(getPostJobGcode()+",M5");
   }
   
